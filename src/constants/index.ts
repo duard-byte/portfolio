@@ -573,6 +573,8 @@ export const socials: Socials[] = [
 export const contact =
   "mailto:magbanuaraven08@gmail.com?subject=Let's%20Connect";
 
+export const resume = "resume/Raven_Magbanua_Resume2026.pdf";
+
 export const context = {
   profile: {
     name: "Raven Magbanua",

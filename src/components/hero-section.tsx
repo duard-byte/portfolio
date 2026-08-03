@@ -13,10 +13,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { contact, role } from "@/constants";
 import { usePortfolioMode } from "@/context/portfolio-mode-context";
+import { resume } from "@/constants";
 
 export function HeroSection() {
   const { mode } = usePortfolioMode();
-
   const currentRole = role[mode];
 
   return (
@@ -83,12 +83,7 @@ export function HeroSection() {
                 <div className="flex items-center gap-2 pt-1 justify-evenly md:justify-start">
                   <Button
                     nativeButton={false}
-                    render={
-                      <a
-                        href="/resume/Raven_Magbanua_Resume2026.pdf"
-                        download
-                      />
-                    }
+                    render={<a href={resume} download />}
                   >
                     Download Resume
                   </Button>
