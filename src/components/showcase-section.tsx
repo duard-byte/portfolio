@@ -1,95 +1,133 @@
 "use client";
 import {
   Card,
+  CardAction,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
+import { Separator } from "@/components/ui/separator";
 import { certificates, projects } from "@/constants";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { GitBranchPlus, GitMerge } from "lucide-react";
+import { motion } from "framer-motion";
 export function ShowCaseSection() {
   return (
-    <section className="mt-4">
-      <div className="grid grid-cols-1 item-start gap-4 lg:grid-cols-3">
-        {/* Recent Projects */}
-        <Card className="lg:col-span-2 p-4 overflow-hidden">
-          <CardTitle
-            className="flex tracking-widest
-          items-center gap-1.5 text-base font-bold text-left"
-          >
-            Recent Projects
-          </CardTitle>
-          <CardDescription className="grid auto-rows-fr grid-cols-1 gap-3 md:grid-cols-2 space-y-1 mt-1">
-            {projects.map((section) => (
-              <Card key={section.name} className="h-full overflow-hidden p-4">
-                <div className="grid grid-cols-[auto_1fr] items-start gap-4">
-                  {/* GitHub Logo */}
-                  <Image
-                    src="/icons/dev/github.png"
-                    alt="GitHub"
-                    width={50}
-                    height={50}
-                    className="shrink-0"
-                  />
+    <section className="mt-4 md:mt-6">
+      <motion.div
+        initial={{
+          opacity: 0,
+          filter: "blur(4px)",
+        }}
+        whileInView={{
+          opacity: 1,
+          filter: "blur(0px)",
+        }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{
+          duration: 0.45,
+          ease: "easeOut",
+        }}
+      >
+        <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-3">
+          {/* Recent Projects */}
+          <Card className="overflow-hidden p-4 lg:col-span-2">
+            <CardTitle className="flex items-center gap-1.5 text-left text-base font-bold tracking-widest">
+              Recent Projects
+            </CardTitle>
 
-                  {/* Project Details */}
-                  <div className="min-w-0">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mb-4">
+              {projects.map((section) => (
+                <Card key={section.name} className="gap-0 overflow-hidden py-0">
+                  {/* Project Content */}
+                  <div className="p-4">
                     <CardTitle className="text-sm font-semibold leading-snug text-foreground sm:text-[15px]">
                       {section.name}
                     </CardTitle>
 
-                    <CardDescription className="mt-1 line-clamp-4">
-                      {section.description}
+                    <CardDescription className="mt-1">
+                      <p className="line-clamp-3">{section.description}</p>
+
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {section.language.slice(0, 3).map((language) => (
+                          <Badge key={language} variant="secondary">
+                            {language}
+                          </Badge>
+                        ))}
+
+                        {section.language.length > 3 && (
+                          <Badge variant="outline">
+                            +{section.language.length - 3}
+                          </Badge>
+                        )}
+                      </div>
                     </CardDescription>
-                    {/* <Badge className="mt-1">{section.language}</Badge> */}
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {section.language.slice(0, 3).map((language) => (
-                        <Badge key={language} variant="secondary">
-                          {language}
-                        </Badge>
-                      ))}
-
-                      {section.language.length > 3 && (
-                        <Badge variant="outline">
-                          +{section.language.length - 4}
-                        </Badge>
-                      )}
-                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
-          </CardDescription>
-        </Card>
 
-        {/* Certificates */}
-        <Card className=" p-4 overflow-hidden">
-          <CardTitle
-            className="flex tracking-widest
-          items-center gap-1.5 text-base font-bold text-left"
-          >
-            Recent Certificates
-          </CardTitle>
-          <CardDescription className="grid gap-3">
-            {certificates.slice(0, 3).map((section) => (
-              <Card key={section.title} className="overflow-hidden p-4">
-                <div className="grid grid-cols-[auto_1fr] items-start gap-4">
-                  {/* Company Logo */}
-                  <Image
-                    src={section.logo}
-                    alt={section.company}
-                    width={50}
-                    height={50}
-                    className="shrink-0 rounded-md object-contain"
-                  />
+                  {/* Project Footer */}
+                  <CardFooter className="border-t p-2 flex justify-between">
+                    <Button
+                      variant="default"
+                      className="gap-2 px-2 font-medium "
+                      nativeButton={false}
+                      render={
+                        <a
+                          href={section.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        />
+                      }
+                    >
+                      <Image
+                        src="/socials/github-light.png"
+                        alt="Github"
+                        width={18}
+                        height={18}
+                        sizes="18"
+                        className="shrink-0 dark:invert"
+                      />
 
-                  {/* Certificate Details */}
-                  <div className="min-w-0">
+                      <span>Github</span>
+                    </Button>
+                    {section.live && (
+                      <Badge
+                        variant="secondary"
+                        render={
+                          <a
+                            href={section.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          />
+                        }
+                        className="gap-1.5"
+                      >
+                        <span className="inline-block size-2 shrink-0 rounded-full bg-emerald-500" />
+                        Live now
+                      </Badge>
+                    )}
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
+          </Card>
+
+          {/* Certificates */}
+          <Card className="overflow-hidden p-4">
+            <CardTitle className="text-left text-base font-bold tracking-widest">
+              Recent Certificates
+            </CardTitle>
+
+            <CardDescription className="space-y-2">
+              {certificates.slice(0, 4).map((section, index) => (
+                <div key={section.title}>
+                  <div className="">
                     <div className="flex items-start justify-between gap-3">
-                      <CardTitle className="text-sm font-semibold leading-snug text-foreground sm:text-[15px]">
-                        {section.company}
+                      <CardTitle className="line-clamp-2 text-sm font-semibold leading-snug text-foreground sm:text-[15px]">
+                        {section.title}
                       </CardTitle>
 
                       <span className="shrink-0 text-xs text-muted-foreground">
@@ -97,16 +135,20 @@ export function ShowCaseSection() {
                       </span>
                     </div>
 
-                    <CardDescription className="mt-1 line-clamp-4">
-                      {section.title}
-                    </CardDescription>
+                    <p className="mt-1 line-clamp-1 text-xs text-muted-foreground mb-4">
+                      {section.company}
+                    </p>
                   </div>
+
+                  {index !== certificates.slice(0, 4).length - 1 && (
+                    <Separator />
+                  )}
                 </div>
-              </Card>
-            ))}
-          </CardDescription>
-        </Card>
-      </div>
+              ))}
+            </CardDescription>
+          </Card>
+        </div>
+      </motion.div>
     </section>
   );
 }

@@ -4,7 +4,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-// import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/navbar";
+import { PortfolioModeProvider } from "@/context/portfolio-mode-context";
+import { Toaster } from "@/components/ui/toast";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -21,6 +23,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Raven Magbanua",
   description: "Portfolio",
+  icons: {
+    icon: "/brand/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -49,10 +54,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
-            {/* <Navbar /> */}
+            <Navbar />
             <main className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-6">
-              {children}
+              {/* {children} */}
+              <PortfolioModeProvider>{children}</PortfolioModeProvider>
             </main>
+            <Toaster />
           </TooltipProvider>
         </ThemeProvider>
       </body>

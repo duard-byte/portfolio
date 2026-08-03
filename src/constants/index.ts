@@ -1,6 +1,17 @@
-export const about = [
-  "I am a Full Stack Developer specializing in REST API development. I enjoy developing software that is simple, reliable, and easy to use. My goal is to create applications that solve real world problems while maintaining clean and scalable code.",
-  "I graduated with a Bachelor of Science in Computer Engineering from Pampanga State University. During my internship as an IoT/AI Developer at SATEZO OPC, I gained hands on experience developing IoT and AI solutions while working with both software and embedded systems. This experience strengthened my understanding of real world software development and engineering.",
+export const role = {
+  software: {
+    targetRole: "Associate Software Engineer",
+    resume: "/resume/Raven_Magbanua_Resume2026.pdf",
+  },
+  embedded: {
+    targetRole: "Associate Embedded Systems Engineer",
+    resume: "/resume/Raven_Magbanua_Embedded_Resume2026.pdf",
+  },
+};
+
+export const about: string[] = [
+  "I am a Full Stack Developer specializing in REST API development. I graduated with a Bachelor of Science in Computer Engineering from Pampanga State University. My goal is to create applications that solve real world problems while maintaining clean and scalable code.",
+  " During my internship as an IoT/AI Developer at SATEZO OPC, I gained hands on experience developing IoT and AI solutions while working with both software and embedded systems.",
   "My experience includes developing responsive web applications, designing REST APIs, and working with relational and NoSQL databases. I am currently seeking opportunities as an Associate Software Engineer where I can continue learning from experienced developers and contribute to building secure, scalable, and maintainable software.",
 ];
 
@@ -46,7 +57,7 @@ export const education: Education[] = [
     school: "Pampanga State University",
   },
   {
-    year: "2019 - 2020",
+    year: "2018 - 2020",
     program: "Humanities and Social Sciences",
     school: "Tarik Suliman High School",
   },
@@ -66,13 +77,13 @@ export const technologies: TechStackCategory[] = [
   {
     category: "Backend Development",
     items: [
-      { icon: "/icons/backend/python-light.png", language: "Python" },
-      { icon: "/icons/backend/nodejs.png", language: "Node.js" },
+      { icon: "/icons/backend/python-dev.png", language: "Python" },
+      { icon: "/icons/backend/nodejs-dev.png", language: "Node.js" },
       { icon: "/icons/backend/django.png", language: "Django" },
-      { icon: "/icons/backend/expressjs.png", language: "Express" },
-      { icon: "/icons/backend/postgresql.png", language: "PostgreSQL" },
+      { icon: "/icons/backend/expressjs-dark.png", language: "Express" },
+      { icon: "/icons/backend/postgresql-dev.png", language: "PostgreSQL" },
       { icon: "/icons/backend/sqlite.png", language: "SQLite" },
-      { icon: "/icons/backend/redis.png", language: "Redis" },
+      { icon: "/icons/backend/redis-dev.png", language: "Redis" },
       { icon: "/icons/backend/mongodb.png", language: "MongoDB" },
       { icon: "/icons/backend/aws.png", language: "AWS" },
     ],
@@ -82,45 +93,54 @@ export const technologies: TechStackCategory[] = [
     items: [
       { icon: "/icons/frontend/javascript.png", language: "JavaScript" },
       { icon: "/icons/frontend/typescript.png", language: "TypeScript" },
-      { icon: "/icons/frontend/react.png", language: "React" },
-      { icon: "/icons/frontend/nextjs.png", language: "Next.js" },
-      { icon: "/icons/frontend/tailwindcss.png", language: "Tailwind CSS" },
+      { icon: "/icons/frontend/react-dev.png", language: "React" },
+      { icon: "/icons/frontend/nextjs-dev.png", language: "Next.js" },
+      { icon: "/icons/frontend/tailwindcss-dev.png", language: "Tailwind CSS" },
       { icon: "/icons/frontend/bootstrap.png", language: "Bootstrap" },
-      { icon: "/icons/frontend/vite-dark.png", language: "Vite" },
-      { icon: "/icons/frontend/zustand.png", language: "Zustand" },
-      { icon: "/icons/frontend/redux.png", language: "Redux" },
+      { icon: "/icons/frontend/vitejs.png", language: "Vite" },
+      { icon: "/icons/frontend/zustand-dev.png", language: "Zustand" },
+      { icon: "/icons/frontend/redux-dev.png", language: "Redux" },
     ],
   },
   {
     category: "Machine Learning",
     items: [
-      { icon: "/icons/ml/tensorflow-light.png", language: "Tensorflow" },
+      { icon: "/icons/ml/tensorflow-dev.png", language: "Tensorflow" },
       { icon: "/icons/ml/ultralytics.png", language: "Ultralytics" },
-      { icon: "/icons/ml/pytorch-light.png", language: "PyTorch" },
-      { icon: "/icons/ml/scikitlearn.png", language: "Scikit-learn" },
+      { icon: "/icons/ml/pytorch-dev.png", language: "PyTorch" },
+      { icon: "/icons/ml/scikitlearn-dev.png", language: "Scikit-learn" },
+    ],
+  },
+  {
+    category: "Mobile Development",
+    items: [
+      { icon: "/icons/mobile/androidstudio.png", language: "Android Studio" },
+      { icon: "/icons/mobile/flutter.png", language: "Flutter" },
+      { icon: "/icons/mobile/dart.png", language: "Dart" },
+      { icon: "/icons/mobile/kivy-dev.png", language: "Kivy" },
+    ],
+  },
+  {
+    category: "Operating System",
+    items: [
+      { icon: "/icons/os/linux.png", language: "Linux" },
+      { icon: "/icons/os/ubuntu-dev.png", language: "Ubuntu" },
+      { icon: "/icons/os/rpi.png", language: "Raspberry Pi" },
+    ],
+  },
+  {
+    category: "Developer Tools",
+    items: [
+      { icon: "/icons/dev/git.png", language: "Git" },
+      { icon: "/icons/dev/github-rounded.png", language: "Github" },
+      { icon: "/icons/dev/vscode.png", language: "VSCode" },
+      { icon: "/icons/dev/anaconda.png", language: "Anaconda" },
+      { icon: "/icons/dev/jupyter.png", language: "Jupiter Notebook" },
+      { icon: "/icons/dev/bruno.png", language: "Bruno" },
+      { icon: "/icons/dev/postman.png", language: "Postman" },
     ],
   },
 ];
-// {
-//   category: "Mobile Development",
-//   items: [
-//     { icon: "/icons/nodejs.svg", language: "Android Studio" },
-//     { icon: "/icons/nodejs.svg", language: "Flutter" },
-//     { icon: "/icons/python.svg", language: "Dart" },
-//   ],
-// },
-// {
-//   category: "Developer Tools",
-//   items: [
-//     { icon: "/icons/nodejs.svg", language: "Git" },
-//     { icon: "/icons/python.svg", language: "Github" },
-//     { icon: "/icons/python.svg", language: "VSCode" },
-//     { icon: "/icons/python.svg", language: "Anaconda" },
-//     { icon: "/icons/python.svg", language: "Jupiter Notebook" },
-//     { icon: "/icons/python.svg", language: "Bruno" },
-//   ],
-// },
-// ];
 
 type Certificates = {
   title: string;
@@ -385,42 +405,53 @@ export const certificates: Certificates[] = [
   },
 ];
 
-export const projects = [
+type Projects = {
+  name: string;
+  description: string;
+  language: string[];
+  link: string;
+  live: string | null;
+};
+export const projects: Projects[] = [
   {
     name: "Resume.io",
     description:
       "An ATS-friendly online resume builder that allows users to create professional resumes and generate them as PDF files.",
-    language: ["Next.js"],
-    link: "/",
+    language: ["Next.js", "ReactPDF"],
+    link: "https://github.com/pravennn08/Resume.io",
+    live: "",
   },
   {
     name: "A.S.A.P Lagundi",
     description:
-      "A real-time incident reporting system designed for Barangay Lagundi to record, manage, and monitor reported incidents.",
-    language: ["Express", "React", "MongoDB", "Node.js", "Socket.io"],
-    link: "/",
-  },
-  {
-    name: "Academe.io",
-    description:
-      "A school management API for managing students, attendance, exams, classes, lessons, subjects, teachers, parents, and school events.",
-    language: ["Django", "Neon", "Redis", "PostgreSQL", "Docker"],
-    link: "/",
-  },
-  {
-    name: "PulseOne",
-    description:
-      "A real-time hospital management system for managing appointments, patients, staff, and other hospital operations.",
+      "Real-time incident reporting system designed for Barangay Lagundi to record, manage, and monitor reported incidents.",
     language: [
       "Express",
       "React",
       "Prisma",
       "Node.js",
+      "PostreSQL",
+      "Neon",
       "Socket.io",
-      "Zustand",
-      "Redis",
     ],
-    link: "/",
+    link: "https://github.com/pravennn08/ASAP-Lagundii",
+    live: "",
+  },
+  {
+    name: "Academe.io",
+    description:
+      "School management API for managing students, attendance, exams, classes, lessons, subjects, teachers, parents, and school events.",
+    language: ["Django", "PostgreSQL", "Redis", "Neon", "Docker"],
+    link: "https://github.com/pravennn08/Academe.io-API",
+    live: "",
+  },
+  {
+    name: "Emil Glass and Aluminum Works",
+    description:
+      "A service appointment booking website that allows customers to schedule consultations and request glass and aluminum services online.",
+    language: ["Next.js", "Zod", "Shadcn", "EmailJS"],
+    link: "https://github.com/pravennn08/Emil_glass_and_aluminum_works",
+    live: "https://emil-glass-and-aluminum-works.vercel.app/",
   },
 ];
 
@@ -452,7 +483,7 @@ export const gallery: Gallery[] = [
     caption: "Let's go OOP in Arduino",
     image: "/gallery/programming/prog3.jpeg",
   },
-  { caption: "PSU na di gumagana.", image: "/gallery/projects/proj1.jpg" },
+  { caption: "PSU na di gumana.", image: "/gallery/projects/proj1.jpg" },
   { caption: "Routings yan?", image: "/gallery/projects/proj2.jpg" },
   {
     caption: "1, 2, 3, go! Kanya kanya na...",
@@ -490,9 +521,10 @@ export const gallery: Gallery[] = [
     caption: "Customtkinter only",
     image: "/gallery/thesis/thesis1.jpg",
   },
+
   {
-    caption: "Pa-evaluate na yan!",
-    image: "/gallery/thesis/thesis2.png",
+    caption: "Bikas",
+    image: "/gallery/thesis/thesis2.jpg",
   },
   {
     caption: "Rate my cable management hehe",
@@ -501,10 +533,6 @@ export const gallery: Gallery[] = [
   {
     caption: "Accuracy ba kamo?",
     image: "/gallery/thesis/thesis4.jpg",
-  },
-  {
-    caption: "Bikas",
-    image: "/gallery/thesis/thesis5.jpg",
   },
 ];
 
@@ -530,7 +558,6 @@ export const socials: Socials[] = [
     icon: "/icons/dev/github.png",
     link: "https://github.com/pravennn08",
   },
-
   {
     name: "linkedin",
     icon: "/socials/linkedin.png",
@@ -542,3 +569,20 @@ export const socials: Socials[] = [
     link: "https://discord.com/users/1030796162988511292",
   },
 ];
+
+export const contact =
+  "mailto:magbanuaraven08@gmail.com?subject=Let's%20Connect";
+
+export const context = {
+  profile: {
+    name: "Raven Magbanua",
+    targetRole: "Associate Software Engineer",
+  },
+  about,
+  experiences,
+  education,
+  technologies,
+  projects,
+  certificates,
+  contact,
+};
