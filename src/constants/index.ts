@@ -115,15 +115,6 @@ export const technologies: TechStackCategory[] = [
     ],
   },
   {
-    category: "Mobile Development",
-    items: [
-      { icon: "/icons/mobile/androidstudio.png", language: "Android Studio" },
-      { icon: "/icons/mobile/flutter.png", language: "Flutter" },
-      { icon: "/icons/mobile/dart.png", language: "Dart" },
-      { icon: "/icons/mobile/kivy-dev.png", language: "Kivy" },
-    ],
-  },
-  {
     category: "Embedded System",
     items: [
       { icon: "/icons/embedded/uno.png", language: "Arduino" },
@@ -132,6 +123,16 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/embedded/micropython.png", language: "Micropython" },
     ],
   },
+  {
+    category: "Mobile Development",
+    items: [
+      { icon: "/icons/mobile/androidstudio.png", language: "Android Studio" },
+      { icon: "/icons/mobile/flutter.png", language: "Flutter" },
+      { icon: "/icons/mobile/dart.png", language: "Dart" },
+      { icon: "/icons/mobile/kivy-dev.png", language: "Kivy" },
+    ],
+  },
+
   {
     category: "Operating System",
     items: [

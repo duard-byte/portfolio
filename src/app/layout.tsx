@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Raven Magbanua",
-  description: "Portfolio",
+  description: "Associate Software Engineer",
   icons: {
     icon: "/brand/logo.png",
   },
