@@ -43,6 +43,14 @@ export function FloatingButton({ onClick, isOpen }: FloatingButtonProps) {
               sizes="28"
               className="size-7 shrink-0 object-contain dark:invert"
             />
+            {!isOpen && (
+              <span
+                className="absolute -right-1 -top-1 flex size-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-semibold text-white"
+                aria-label="1 unread message"
+              >
+                1
+              </span>
+            )}
           </Button>
         }
       ></TooltipTrigger>
