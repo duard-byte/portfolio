@@ -71,12 +71,20 @@ export function HeroSection() {
                   </span>
                 </CardTitle>
 
-                <CardDescription className="flex items-center gap-1.5 text-sm text-left mt-2 md:mt-0">
+                <CardDescription
+                  className="
+                          mt-2 md:mt-0
+                          flex items-center justify-center md:justify-start
+                          gap-1.5
+                          text-sm
+                          text-center md:text-left
+                        "
+                >
                   <MapPin className="size-4 shrink-0" />
-                  <span className="">Masantol, Pampanga</span>
+                  <span>Masantol, Pampanga</span>
                 </CardDescription>
 
-                <p className="text-sm font-medium text-foreground sm:text-base">
+                <p className="text-sm font-medium text-foreground sm:text-base text-center md:text-left">
                   Associate Software Engineer
                 </p>
 

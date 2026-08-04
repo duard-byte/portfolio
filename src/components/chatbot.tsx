@@ -307,7 +307,7 @@ export function Chatbot({ onClose }: ChatbotProps) {
               placeholder={isBusy ? "" : "Ask me something..."}
               disabled={isBusy}
               maxLength={1000}
-              className="min-h-9 max-h-20 resize-none overflow-y-auto"
+              className="min-h-9 max-h-20 resize-none overflow-y-auto text-based"
               onKeyDown={(event) => {
                 if (event.key === "Enter" && !event.shiftKey && !isBusy) {
                   event.preventDefault();
