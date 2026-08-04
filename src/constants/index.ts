@@ -126,7 +126,7 @@ export const technologies: TechStackCategory[] = [
   {
     category: "Embedded System",
     items: [
-      { icon: "/icons/embedded/Arduino.png", language: "Arduino" },
+      { icon: "/icons/embedded/uno.png", language: "Arduino" },
       { icon: "/icons/embedded/cpp.png", language: "C++" },
       { icon: "/icons/embedded/embeddedc.png", language: "Embedded C" },
       { icon: "/icons/embedded/micropython.png", language: "Micropython" },
