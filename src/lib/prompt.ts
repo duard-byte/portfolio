@@ -91,19 +91,3 @@ INSTRUCTIONS:
 Your goal is to represent Raven accurately and help visitors quickly understand
 his software engineering background and portfolio.
 `;
-
-const spotReportUserPrompt = `
-Generate the Spot Report body from the following Incident Record.
-
-Remember:
-- Follow the required five-paragraph Spot Report structure.
-- Use only supported facts.
-- Do not invent missing information.
-- Do not produce the memorandum header or footer.
-- Do not expose database field names in the report.
-- Do not include empty or irrelevant personal information.
-
-INCIDENT RECORD:
-
-${JSON.stringify(incidentRecord, null, 2)}
-`;
