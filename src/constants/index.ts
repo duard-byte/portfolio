@@ -85,6 +85,9 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/backend/sqlite.png", language: "SQLite" },
       { icon: "/icons/backend/redis-dev.png", language: "Redis" },
       { icon: "/icons/backend/mongodb.png", language: "MongoDB" },
+      { icon: "/icons/backend/prisma.png", language: "Prisma" },
+      { icon: "/icons/backend/drizzle.png", language: "Drizzle" },
+      { icon: "/icons/backend/zod.png", language: "Zod" },
       { icon: "/icons/backend/aws.png", language: "AWS" },
     ],
   },
@@ -118,6 +121,15 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/mobile/flutter.png", language: "Flutter" },
       { icon: "/icons/mobile/dart.png", language: "Dart" },
       { icon: "/icons/mobile/kivy-dev.png", language: "Kivy" },
+    ],
+  },
+  {
+    category: "Embedded System",
+    items: [
+      { icon: "/icons/embedded/Arduino.png", language: "Arduino" },
+      { icon: "/icons/embedded/cpp.png", language: "C++" },
+      { icon: "/icons/embedded/embeddedc.png", language: "Embedded C" },
+      { icon: "/icons/embedded/micropython.png", language: "Micropython" },
     ],
   },
   {
@@ -555,7 +567,7 @@ export const socials: Socials[] = [
   },
   {
     name: "github",
-    icon: "/icons/dev/github.png",
+    icon: "/icons/dev/github-rounded.png",
     link: "https://github.com/pravennn08",
   },
   {
@@ -573,7 +585,7 @@ export const socials: Socials[] = [
 export const contact =
   "mailto:magbanuaraven08@gmail.com?subject=Let's%20Connect";
 
-export const resume = "resume/Raven_Magbanua_Resume2026.pdf";
+export const resume = "resume/Raven_Magbanua_Resume_Ase_2026.pdf";
 
 export const context = {
   profile: {

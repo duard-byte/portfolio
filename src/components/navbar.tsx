@@ -70,7 +70,7 @@ export function Navbar() {
                 )}
               >
                 <Image
-                  src="/profile/r1.png"
+                  src="/profile/r.png"
                   alt=""
                   width={48}
                   height={48}
@@ -80,7 +80,7 @@ export function Navbar() {
                     "size-full object-contain p-1.5",
                     "transition-transform duration-300",
                     "group-hover:scale-105",
-                    "dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.25)]",
+                    "dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.25)] dark:invert",
                   )}
                 />
               </span>
