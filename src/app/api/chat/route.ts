@@ -29,8 +29,7 @@ export async function POST(request: NextRequest) {
     const recentMessages = body.messages.slice(-20);
     const stream = await openRouter.chat.send({
       chatRequest: {
-        model:
-          process.env.OPENROUTER_MODEL ?? "inclusionai/ling-3.0-flash:free",
+        model: process.env.OPENROUTER_MODEL ?? "stealth/space-bunny-alpha",
 
         messages: [
           {

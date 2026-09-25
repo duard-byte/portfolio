@@ -1,7 +1,7 @@
 export const role = {
   software: {
     targetRole: "Associate Software Engineer",
-    resume: "/resume/Raven_Magbanua_Resume2026.pdf",
+    resume: "/resume/Raven_Magbanua_Resume_Cpe_2026.pdf",
   },
   embedded: {
     targetRole: "Associate Embedded Systems Engineer",
@@ -77,18 +77,20 @@ export const technologies: TechStackCategory[] = [
   {
     category: "Backend Development",
     items: [
-      { icon: "/icons/backend/python-dev.png", language: "Python" },
-      { icon: "/icons/backend/nodejs-dev.png", language: "Node.js" },
+      { icon: "/icons/backend/python.png", language: "Python" },
+      { icon: "/icons/backend/nodejs.png", language: "Node.js" },
       { icon: "/icons/backend/django.png", language: "Django" },
-      { icon: "/icons/backend/expressjs-dark.png", language: "Express" },
-      { icon: "/icons/backend/postgresql-dev.png", language: "PostgreSQL" },
+      { icon: "/icons/backend/fastapi.png", language: "FastAPI" },
+      { icon: "/icons/backend/nestjs.png", language: "NestJs" },
+      { icon: "/icons/backend/express.png", language: "Express" },
+      { icon: "/icons/backend/postgresql.png", language: "PostgreSQL" },
       { icon: "/icons/backend/sqlite.png", language: "SQLite" },
-      { icon: "/icons/backend/redis-dev.png", language: "Redis" },
+      { icon: "/icons/backend/redis.png", language: "Redis" },
       { icon: "/icons/backend/mongodb.png", language: "MongoDB" },
-      { icon: "/icons/backend/prisma.png", language: "Prisma" },
+      { icon: "/icons/backend/typeorm.png", language: "TypeORM" },
       { icon: "/icons/backend/drizzle.png", language: "Drizzle" },
+      { icon: "/icons/backend/prisma.png", language: "Prisma" },
       { icon: "/icons/backend/zod.png", language: "Zod" },
-      { icon: "/icons/backend/aws.png", language: "AWS" },
     ],
   },
   {
@@ -102,7 +104,6 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/frontend/bootstrap.png", language: "Bootstrap" },
       { icon: "/icons/frontend/vitejs.png", language: "Vite" },
       { icon: "/icons/frontend/zustand-dev.png", language: "Zustand" },
-      { icon: "/icons/frontend/redux-dev.png", language: "Redux" },
     ],
   },
   {
@@ -121,15 +122,7 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/embedded/cpp.png", language: "C++" },
       { icon: "/icons/embedded/embeddedc.png", language: "Embedded C" },
       { icon: "/icons/embedded/micropython.png", language: "Micropython" },
-    ],
-  },
-  {
-    category: "Mobile Development",
-    items: [
-      { icon: "/icons/mobile/androidstudio.png", language: "Android Studio" },
-      { icon: "/icons/mobile/flutter.png", language: "Flutter" },
-      { icon: "/icons/mobile/dart.png", language: "Dart" },
-      { icon: "/icons/mobile/kivy-dev.png", language: "Kivy" },
+      { icon: "/icons/embedded/kicad-dev.png", language: "KiCad" },
     ],
   },
 
@@ -146,6 +139,8 @@ export const technologies: TechStackCategory[] = [
     items: [
       { icon: "/icons/dev/git.png", language: "Git" },
       { icon: "/icons/dev/github-rounded.png", language: "Github" },
+      { icon: "/icons/dev/githubactions.png", language: "Github Actions" },
+      { icon: "/icons/dev/docker.png", language: "Docker" },
       { icon: "/icons/dev/vscode.png", language: "VSCode" },
       { icon: "/icons/dev/anaconda.png", language: "Anaconda" },
       { icon: "/icons/dev/jupyter.png", language: "Jupiter Notebook" },
@@ -427,36 +422,36 @@ type Projects = {
 };
 export const projects: Projects[] = [
   {
-    name: "Resume.io",
+    name: "MIRS: Masantol Incident Reporting System",
     description:
-      "An ATS-friendly online resume builder that allows users to create professional resumes and generate them as PDF files.",
-    language: ["Next.js", "ReactPDF"],
-    link: "https://github.com/pravennn08/Resume.io",
-    live: "",
-  },
-  {
-    name: "A.S.A.P Lagundi",
-    description:
-      "Real-time incident reporting system designed for Barangay Lagundi to record, manage, and monitor reported incidents.",
+      "A real-time community incident reporting and barangay response-management platform for residents, administrators, and barangay tanods.",
     language: [
       "Express",
       "React",
-      "Prisma",
+      "Drizzle",
       "Node.js",
       "PostreSQL",
-      "Neon",
+      "Zod",
       "Socket.io",
     ],
-    link: "https://github.com/pravennn08/ASAP-Lagundii",
+    link: "https://github.com/pravennn08/mirs",
     live: "",
   },
   {
-    name: "Academe.io",
+    name: "Kinetic.io: Collaborative Task & Project Management API",
     description:
-      "School management API for managing students, attendance, exams, classes, lessons, subjects, teachers, parents, and school events.",
-    language: ["Django", "PostgreSQL", "Redis", "Neon", "Docker"],
-    link: "https://github.com/pravennn08/Academe.io-API",
+      "Production-oriented REST API fo where users organize projects, collaborate through project membership, and manage tasks assigned to multiple people. ",
+    language: ["FastAPI", "PostgreSQL", "Neon", "Pydantic"],
+    link: "https://github.com/pravennn08/kinetic.io",
     live: "",
+  },
+  {
+    name: "Semaphore SMS SDK for TypeScript",
+    description:
+      "A TypeScript library for integrating the Semaphore SMS API into Node.js applications. It provides native fetch, strict types, input and response validation, injectable transports, and stable error classifications.",
+    language: ["Nodejs", "Typescript", "Vite", "Github Actions"],
+    link: "https://github.com/pravennn08/semaphore-sdk",
+    live: "https://www.npmjs.com/package/semaphore-sdk",
   },
   {
     name: "Emil Glass and Aluminum Works",
@@ -586,7 +581,7 @@ export const socials: Socials[] = [
 export const contact =
   "mailto:magbanuaraven08@gmail.com?subject=Let's%20Connect";
 
-export const resume = "resume/Raven_Magbanua_Resume_Ase_2026.pdf";
+export const resume = "resume/Raven_Magbanua_Resume_Cpe_2026.pdf";
 
 export const context = {
   profile: {
