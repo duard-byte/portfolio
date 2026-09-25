@@ -69,7 +69,7 @@ export function ShowCaseSection() {
                   </div>
 
                   {/* Project Footer */}
-                  <CardFooter className="border-t p-2 flex justify-between">
+                  <CardFooter className="border-t p-4 flex justify-between">
                     <Button
                       variant="default"
                       className="gap-2 px-2 font-medium "
