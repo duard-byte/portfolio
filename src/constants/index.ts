@@ -103,7 +103,7 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/frontend/tailwindcss-dev.png", language: "Tailwind CSS" },
       { icon: "/icons/frontend/bootstrap.png", language: "Bootstrap" },
       { icon: "/icons/frontend/vitejs.png", language: "Vite" },
-      { icon: "/icons/frontend/zustand-dev.png", language: "Zustand" },
+      { icon: "/icons/frontend/zustand.png", language: "Zustand" },
     ],
   },
   {
