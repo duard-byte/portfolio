@@ -122,7 +122,7 @@ export const technologies: TechStackCategory[] = [
       { icon: "/icons/embedded/cpp.png", language: "C++" },
       { icon: "/icons/embedded/embeddedc.png", language: "Embedded C" },
       { icon: "/icons/embedded/micropython.png", language: "Micropython" },
-      { icon: "/icons/embedded/kicad-dev.png", language: "KiCad" },
+      { icon: "/icons/embedded/kicad-d.png", language: "KiCad" },
     ],
   },
 
@@ -435,7 +435,7 @@ export const projects: Projects[] = [
       "Socket.io",
     ],
     link: "https://github.com/pravennn08/mirs",
-    live: "",
+    live: "https://mirs-sandy.vercel.app",
   },
   {
     name: "Kinetic.io: Collaborative Task & Project Management API",
