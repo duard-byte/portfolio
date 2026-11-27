@@ -41,8 +41,8 @@ export function HeroSection() {
             <div className="flex min-w-0 flex-col gap-4 items-center sm:flex-row sm:items-start sm:gap-6">
               <div className="group relative size-42 shrink-0 overflow-hidden rounded-lg border border-border/60">
                 <Image
-                  src="/profile/raven.jpg"
-                  alt="Engr. Raven C. Magbanua"
+                  src="/profile/eduard.jpeg"
+                  alt="John Eduard G. Jose"
                   fill
                   sizes="168px"
                   priority
@@ -50,8 +50,8 @@ export function HeroSection() {
                 />
 
                 <Image
-                  src="/profile/raven-dark.png"
-                  alt="Engr. Raven C. Magbanua wearing sunglasses"
+                  src="/profile/eduard-g.jpeg"
+                  alt="John Eduard G. Jose wearing sunglasses"
                   fill
                   sizes="168px"
                   className="object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -60,10 +60,10 @@ export function HeroSection() {
               {/* DETAILS */}
               <div className="min-w-0 space-y-1.5">
                 <CardTitle className="text-center text-lg font-bold tracking-wider sm:text-center md:text-2xl md:flex md:text-left ">
-                  Raven
+                  John Eduard
                   <span className="inline-flex items-center gap-2 whitespace-nowrap">
                     {"\u00a0"}
-                    Magbanua
+                   Jose
                     <BadgeCheck
                       aria-label="Verified profile"
                       className="size-5 shrink-0 fill-blue-600 text-white sm:size-6"
@@ -84,21 +84,19 @@ export function HeroSection() {
                   <span>Masantol, Pampanga</span>
                 </CardDescription>
 
-                <p className="text-sm font-medium text-foreground sm:text-base text-center md:text-left">
-                  Associate Software Engineer
-                </p>
+          
 
                 <div className="flex items-center gap-2 pt-1 justify-evenly md:justify-start">
-                  <Button
+                  {/* <Button
                     nativeButton={false}
                     render={<a href={resume} download />}
                   >
                     Download Resume
-                  </Button>
+                  </Button> */}
 
                   <Button
                     variant="outline"
-                    aria-label="Email Raven"
+                    aria-label="Email Eduard"
                     title="Send email"
                     className=" shrink-0"
                     nativeButton={false}

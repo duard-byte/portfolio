@@ -55,7 +55,7 @@ export function FloatingButton({ onClick, isOpen }: FloatingButtonProps) {
         }
       ></TooltipTrigger>
       <TooltipContent>
-        <p>Chat with Raven</p>
+        <p>Chat with Eduard</p>
       </TooltipContent>
     </Tooltip>
   );

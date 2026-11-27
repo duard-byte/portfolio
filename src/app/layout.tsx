@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raven Magbanua",
-  description: "Associate Software Engineer",
+  title: "John Eduard G. Jose",
+  description: "BS Information Technology Student",
   icons: {
     icon: "/brand/logo.png",
   },

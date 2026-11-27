@@ -51,7 +51,7 @@ export function Navbar() {
             {/* Logo + Name */}
             <Link
               href="/#home"
-              aria-label="Raven Magbanua home"
+              aria-label="John Eduard home"
               className={cn(
                 "group flex min-w-0 items-center gap-2.5 rounded-xl",
                 "outline-none",
@@ -87,7 +87,7 @@ export function Navbar() {
 
               <span className="flex min-w-0 flex-col">
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wider text-foreground sm:text-base">
-                  <span className="truncate">Raven Magbanua</span>
+                  <span className="truncate">John Eduard G. Jose</span>
 
                   <BadgeCheck
                     aria-label="Verified profile"
@@ -96,7 +96,7 @@ export function Navbar() {
                 </span>
 
                 <span className="text-xs text-muted-foreground">
-                  Associate Software Engineer
+                  BS Information Technology Student
                 </span>
               </span>
             </Link>
@@ -106,7 +106,7 @@ export function Navbar() {
                 nativeButton={false}
                 render={<Link href={contact} />}
                 variant="default"
-                aria-label="Contact Raven"
+                aria-label="Contact Eduard"
                 title="Contact me"
                 className=" shrink-0"
               >

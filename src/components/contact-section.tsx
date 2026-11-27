@@ -53,7 +53,7 @@ export function ContactSection() {
             <div className="relative h-65 w-full sm:h-72 overflow-hidden">
               <iframe
                 title="Map location"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Bagang%20mAS&amp;maptype=satellite&amp;zoom=14"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&q=Alauli&maptype=satellite&zoom=14"
                 className="absolute inset-0 h-full w-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
