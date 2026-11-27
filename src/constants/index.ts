@@ -147,7 +147,7 @@ export const projects: Projects[] = [
       "Express",
       "Next.js",
       "Node.js",
-      "PostreSQL",
+      "PostgreSQL",
       "Zod",
       "Prisma",
     ],
