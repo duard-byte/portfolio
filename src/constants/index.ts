@@ -51,7 +51,7 @@ type Education = {
 export const education: Education[] = [
   {
     year: "2023 - 2027",
-    program: "Bachelor of Science in Imformation Technology",
+    program: "Bachelor of Science in Information Technology",
     school: "Pampanga State University",
   },
   {
@@ -135,6 +135,8 @@ type Projects = {
   name: string;
   description: string;
   language: string[];
+  link?: string;
+  live?: string;
 };
 export const projects: Projects[] = [
   {
