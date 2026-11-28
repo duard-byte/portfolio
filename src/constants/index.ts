@@ -125,7 +125,7 @@ export const certificates: Certificates[] = [
     title: "Cloud Computing Fundamentals",
     date: "2026",
     company: "IBM SkillsBuild",
-    logo: "/company/ibm-logo.png",
+    logo: "/company/ibm.png",
     image: "/",
     link: "/",
   },

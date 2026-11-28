@@ -70,7 +70,7 @@ export function Navbar() {
                 )}
               >
                 <Image
-                  src="/profile/r.png"
+                  src="/profile/logo.png"
                   alt=""
                   width={48}
                   height={48}
